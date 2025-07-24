@@ -11,12 +11,15 @@ import {
 } from '@mui/material';
 import { CheckCircle, Error } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import ContextNavigation from '../components/ContextNavigation';
 
 const ContextPage: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <Container maxWidth="lg">
+      <ContextNavigation currentPage="Context Hub" showNavigation={false} />
+      
       <Typography variant="h4" gutterBottom>
         React Context API Learning Hub
       </Typography>

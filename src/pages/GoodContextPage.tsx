@@ -14,6 +14,7 @@ import {
   Switch,
   FormControlLabel,
 } from '@mui/material';
+import ContextNavigation from '../components/ContextNavigation';
 
 // ✅ GOOD PRACTICE 1: Separate contexts for different concerns
 
@@ -349,6 +350,8 @@ const UserDemo: React.FC = () => {
 const GoodContextPage: React.FC = () => {
   return (
     <Container maxWidth="lg">
+      <ContextNavigation currentPage="good-context" />
+      
       <Typography variant="h4" gutterBottom color="success.main">
         ✅ Good Context API Usage
       </Typography>

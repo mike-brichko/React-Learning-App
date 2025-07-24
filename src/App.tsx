@@ -14,6 +14,10 @@ import ComponentsPage from './pages/ComponentsPage';
 import ContextPage from './pages/ContextPage';
 import PoorContextPage from './pages/PoorContextPage';
 import GoodContextPage from './pages/GoodContextPage';
+import MassiveContextPage from './pages/context-antipatterns/MassiveContextPage';
+import ObjectRecreationPage from './pages/context-antipatterns/ObjectRecreationPage';
+import MissingDependenciesPage from './pages/context-antipatterns/MissingDependenciesPage';
+import HeavyComputationsPage from './pages/context-antipatterns/HeavyComputationsPage';
 import ReduxPage from './pages/ReduxPage';
 import ReactQueryPage from './pages/ReactQueryPage';
 import TestingPage from './pages/TestingPage';
@@ -119,6 +123,12 @@ function App() {
                   <Route path="/context" element={<ContextPage />} />
                   <Route path="/poor-context" element={<PoorContextPage />} />
                   <Route path="/good-context" element={<GoodContextPage />} />
+                  
+                  {/* Context Anti-Pattern Pages */}
+                  <Route path="/context-antipatterns/massive-context" element={<MassiveContextPage />} />
+                  <Route path="/context-antipatterns/object-recreation" element={<ObjectRecreationPage />} />
+                  <Route path="/context-antipatterns/missing-dependencies" element={<MissingDependenciesPage />} />
+                  <Route path="/context-antipatterns/heavy-computations" element={<HeavyComputationsPage />} />
                   
                   <Route path="/redux" element={<ReduxPage />} />
                   <Route path="/react-query" element={<ReactQueryPage />} />
