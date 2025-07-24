@@ -20,6 +20,11 @@ import MissingDependenciesPage from './pages/context-antipatterns/MissingDepende
 import HeavyComputationsPage from './pages/context-antipatterns/HeavyComputationsPage';
 import ReduxPage from './pages/ReduxPage';
 import ReactQueryPage from './pages/ReactQueryPage';
+import BasicQueriesPage from './pages/react-query/BasicQueriesPage';
+import DependentQueriesPage from './pages/react-query/DependentQueriesPage';
+import MutationsPage from './pages/react-query/MutationsPage';
+import OptimisticUpdatesPage from './pages/react-query/OptimisticUpdatesPage';
+import CacheManagementPage from './pages/react-query/CacheManagementPage';
 import TestingPage from './pages/TestingPage';
 
 // Import individual hook pages
@@ -132,6 +137,11 @@ function App() {
                   
                   <Route path="/redux" element={<ReduxPage />} />
                   <Route path="/react-query" element={<ReactQueryPage />} />
+                  <Route path="/react-query/basic-queries" element={<BasicQueriesPage />} />
+                  <Route path="/react-query/dependent-queries" element={<DependentQueriesPage />} />
+                  <Route path="/react-query/mutations" element={<MutationsPage />} />
+                  <Route path="/react-query/optimistic-updates" element={<OptimisticUpdatesPage />} />
+                  <Route path="/react-query/cache-management" element={<CacheManagementPage />} />
                   <Route path="/testing" element={<TestingPage />} />
                 </Routes>
               </Layout>
