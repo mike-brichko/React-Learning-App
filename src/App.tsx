@@ -12,6 +12,8 @@ import HomePage from './pages/HomePage';
 import HooksPage from './pages/HooksPage';
 import ComponentsPage from './pages/ComponentsPage';
 import ContextPage from './pages/ContextPage';
+import PoorContextPage from './pages/PoorContextPage';
+import GoodContextPage from './pages/GoodContextPage';
 import ReduxPage from './pages/ReduxPage';
 import ReactQueryPage from './pages/ReactQueryPage';
 import TestingPage from './pages/TestingPage';
@@ -113,7 +115,11 @@ function App() {
                   <Route path="/components/memoized-component" element={<MemoizedComponentPage />} />
                   <Route path="/components/forward-ref" element={<ForwardRefPage />} />
                   <Route path="/components/error-boundary" element={<ErrorBoundaryPage />} />
+                  
                   <Route path="/context" element={<ContextPage />} />
+                  <Route path="/poor-context" element={<PoorContextPage />} />
+                  <Route path="/good-context" element={<GoodContextPage />} />
+                  
                   <Route path="/redux" element={<ReduxPage />} />
                   <Route path="/react-query" element={<ReactQueryPage />} />
                   <Route path="/testing" element={<TestingPage />} />
